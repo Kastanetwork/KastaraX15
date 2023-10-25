@@ -1688,7 +1688,7 @@ var ppnu = 'https://telegra.ph/file/6880771a42bad09dd6087.jpg'
 }
 var res_us = `${makeid(10)}`
 var diacuk = `${db_user.length+1}`
-var user_name = `#GRXY${diacuk}`
+var user_name = `#KST${diacuk}`
 let object_user = {"id": sender, "name": user_name, "seri": res_us, "premium": false}
 db_user.push(object_user)
 fs.writeFileSync('./database/pengguna.json', JSON.stringify(db_user))
