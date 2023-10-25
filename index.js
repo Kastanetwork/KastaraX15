@@ -415,6 +415,7 @@ conn.groupParticipantsUpdate(from, [sender], "remove")
 }
 }
 //Function Autojpm
+let ppnyanjir = 'bit.ly/ppnyanjir'
 if (isGroup && isAutojpm && isOwner){
 if (chats.match(/(https:\/\/chat.whatsapp.com|PANEL|RUN|BOT|VPS|ADMIN PANEL|PM|MINAT|PROMO|PROVIDER|HOSTING|DIGITAL OCEAN|LINODE|NOKOS|STORE|wa.me|MURAH|ANTIDOWN|INSTALL|BERGARANSI|SC|SCRIPT|SERVER|AMAN|TERJAMIN|PM|MINAT|SELL)/gi)) {
 if (isOwner) return reply('Untung lu owner ku:v😙')
@@ -534,7 +535,7 @@ return [...text.matchAll(/@([0-9]{5,16}|0)/g)].map(v => v[1] + '@s.whatsapp.net'
 }
 
 // Function for Anti Spam
-msgFilter.ResetSpam(orang_spam)
+/*msgFilter.ResetSpam(orang_spam)
 
 const spampm = () => {
 console.log(color('~>[SPAM]', 'red'), color(moment(msg.messageTimestamp * 1000).format('DD/MM/YY HH:mm:ss'), 'yellow'), color(`${command} [${args.length}]`), 'from', color(pushname))
@@ -552,7 +553,7 @@ if (isCmd && msgFilter.isFiltered(sender) && !isGroup) return spampm()
 if (isCmd && msgFilter.isFiltered(sender) && isGroup) return spamgr()
 if (isCmd && args.length < 1 && !isOwner) msgFilter.addFilter(sender)
 
-
+*/
 // Console
 if (isGroup && isCmd) {
 console.log(colors.green.bold("[Group]") + " " + colors.brightCyan(time,) + " " + colors.black.bgYellow(command) + " " + colors.green("from") + " " + colors.blue(groupName));
@@ -1763,7 +1764,6 @@ case 'thanksto':case 'contributors':case 'contributor':{
    •Zeeone Ofc *[Penyedia apikey]*
    •Danzz C *[Penyedia Apikey]*
    •Ronzz YT *[Support]*
-   •${setting.ownerName}
    •And My Subscriber`
 conn.sendMessage(from, {text : ayank}, { quoted: fkontak })
 }
@@ -1829,7 +1829,7 @@ reply('Suscess.., Permintaan mu Sudah terkirim Ke Owner Script')
 let text_request =`*| REQUEST |*\n`
 text_request +=`Dari : ${sender.split('@')[0]}\n`
 text_request +=`Request Nya : ${pesan_request}`
-conn.sendMessage(`6285791220179@s.whatsapp.net`, {text: text_request}, {quoted:fkontak})
+conn.sendMessage(`6281952806095@s.whatsapp.net`, {text: text_request}, {quoted:fkontak})
 break
 case 'ppcp':
 case 'ppcouple':
@@ -1994,7 +1994,7 @@ break
 //»»————-★INFORMATUON MENU★————-««
 case 'ssweb':{
 if (cekUser("id", sender) == null) return conn.sendMessage(from, { text: mess.OnlyUser, footer: `Powerd By - @${setting.kontakOwner}`, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak })
-if (args.length < 1) return reply(`Ex : ${prefix+command} Link\n\nContoh :\n${prefix+command} https://github.com/Ramaa-Gnnzz`)
+if (args.length < 1) return reply(`Ex : ${prefix+command} Link\n\nContoh :\n${prefix+command} https://github.com/kastanetwork`)
 reply(mess.wait)
 let anu = `https://saipulanuar.ga/api/download/ssweb2?url=${q}`
 if (anu.status == false) return reply('Link url tidak valid')
@@ -2157,7 +2157,7 @@ conn.sendMessage(`${num}@s.whatsapp.net`, button_menfess)
 break
 case 'secret':{
 if (cekPesan("id", sender) !== null) return reply("Kamu Sedang Didalam roomchat ketik *#stopchat* untuk menghapus sesi chat.")
-if (!q) return reply(`Format Fitur Secrett / Kirim pesan rahasia ke seseorang Lewat bot\n\n_*Example*_\n${prefix+command} wa|pengirim\n\n_*Contoh*_\n${prefix+command} 628xxxx|Rama\n\n*Note :*\nBerawal dari 628xxx tanpa spasi`)
+if (!q) return reply(`Format Fitur Secrett / Kirim pesan rahasia ke seseorang Lewat bot\n\n_*Example*_\n${prefix+command} wa|pengirim\n\n_*Contoh*_\n${prefix+command} 628xxxx|Iyan\n\n*Note :*\nBerawal dari 628xxx tanpa spasi`)
 let num = q.split('|')[0]
 let nama_pengirim = q.split('|')[1]
 var cekap = await conn.onWhatsApp(num+"@s.whatsapp.net")
@@ -3025,7 +3025,7 @@ case "naruto":
 case "butterfly":
 case "flaming":{
 if (cekUser("id", sender) == null) return conn.sendMessage(from, { text: mess.OnlyUser, footer: `Powerd By - @${setting.kontakOwner}`, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak })
-if (!q) return reply(`_Contoh_\n${prefix+command} Rama`)
+if (!q) return reply(`_Contoh_\n${prefix+command} Iyan`)
 reply(mess.wait)
 let photooxy =`https://api.nataganz.com/api/photooxy/${command}?text=${q}&apikey=Pasha`
 conn.sendMessage(from, {image: { url: photooxy }, caption: `Hasil dari ${command}`}, { quoted: msg})
@@ -3033,7 +3033,7 @@ conn.sendMessage(from, {image: { url: photooxy }, caption: `Hasil dari ${command
 break
 case 'halloween2': case 'blackpink':case 'rainbow2':case 'water_pipe':case 'halloween':case 'sketch':case 'sircuit':case 'discovery':case 'metallic2':case 'fiction':case 'demon':case 'transformer':case 'berry':case 'thunder':case 'magma':case '3dstone':case 'neon':case 'glitch':case 'harry_potter':case 'embossed':case 'broken':case 'papercut':case 'gradient':case 'glossy':case 'watercolor':case 'multicolor':case 'neon_devil':case 'underwater':case 'bear':case 'wonderfulg':case 'christmas':case 'neon_light':case 'snow':case 'cloudsky':case 'luxury2':case 'gradient2':case 'summer':case 'writing':case 'engraved':case 'summery':case '3dglue':case 'metaldark':case 'neonlight':case 'oscar':case 'minion':case 'holographic':case 'purple':case 'glossyb':case 'deluxe2':case 'glossyc':case 'fabric':case 'neonc':case 'newyear':case 'newyear2':case 'metals':case 'xmas':case 'blood':case 'darkg':case 'joker':case 'wicker':case 'natural':case 'firework':case 'skeleton':case 'balloon':case 'balloon2':case 'balloon3':case 'balloon4':case 'balloon5':case 'balloon6':case 'balloon7':case 'steel':case 'gloss':case 'denim':case 'decorate':case 'decorate2':case 'peridot':case 'rock':case 'glass':case 'glass2':case 'glass3':case 'glass4':case 'glass5':case 'glass6':case 'glass7':case 'glass8':case 'captain_as2':case 'robot':case 'equalizer':case 'toxic':case 'sparkling':case 'sparkling2':case 'sparkling3':case 'sparkling4':case 'sparkling5':case 'sparkling6':case 'sparkling7':case 'decorative':case 'chocolate':case 'strawberry':case 'koifish':case 'bread':case 'matrix':case 'blood2':case 'neonligth2':case 'thunder2':case '3dbox':case 'neon2':case 'roadw':case 'bokeh':case 'gneon':case 'advanced':case 'dropwater':case 'wall':case 'chrismast':case 'honey':case 'drug':case 'marble':case 'marble2':case 'ice':case 'juice':case 'rusty':case 'abstra':case 'biscuit':case 'wood':case 'scifi':case 'metalr':case 'purpleg':case 'shiny': case 'jewelry':case 'jewelry2':case 'jewelry3':case 'jewelry4':case 'jewelry5':case 'jewelry6':case 'jewelry7':case 'jewelry8':case 'metalh':case 'golden':case 'glitter':case 'glitter2':case 'glitter3':case 'glitter4':case 'glitter5':case 'glitter6':case 'glitter7':case 'metale':case 'carbon':case 'candy':case 'metalb':case 'gemb':case '3dchrome':case 'metalb2':case 'metalg':{
 if (cekUser("id", sender) == null) return conn.sendMessage(from, { text: mess.OnlyUser, footer: `Powerd By - @${setting.kontakOwner}`, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak })
-if (!q) return reply(`_Contoh_\n${prefix+command} RamaaOfc`)
+if (!q) return reply(`_Contoh_\n${prefix+command} Iyan`)
 reply(mess.wait)
 let amu =`https://api.zeeoneofc.my.id/api/textpro/${command}?text=${q}&apikey=${setting.zeeonekey}`
 conn.sendMessage(from, {image: { url: amu }, caption: `Hasil dari ${command}`}, { quoted: msg})
@@ -3042,8 +3042,8 @@ break
 //teks 2
 case 'horror':case 'game8bit':case 'layered':case 'glitch2':case 'coolg':case 'coolwg':case 'realistic':case 'space3d':case 'gtiktok':case 'stone':case 'marvel':case 'marvel2':case 'pornhub':case 'avengers':case 'metalr':case 'metalg':case 'metalg2':case 'lion':case 'wolf_bw':case 'wolf_g':case 'ninja':case '3dsteel':case 'horror2':case 'lava':case 'bagel':{
 if (cekUser("id", sender) == null) return conn.sendMessage(from, { text: mess.OnlyUser, footer: `Powerd By - @${setting.kontakOwner}`, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak })
-if (!q4 && !q5) return reply(`Gunakan text1|text2\nContoh ${prefix+command} Rama|kece`)
-if (!q.includes('|')) return reply(`Gunakan text1|text2\nContoh ${prefix+command}  Rama|kece`)
+if (!q4 && !q5) return reply(`Gunakan text1|text2\nContoh ${prefix+command} Iyan|kece`)
+if (!q.includes('|')) return reply(`Gunakan text1|text2\nContoh ${prefix+command}  Iyan|kece`)
 reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.zeeoneofc.my.id/api/textpro/${command}?text=${q4}&text2=${q5}&apikey=${setting.zeeonekey}` }, caption: `Nih Logo nya\nMinimal Terimakasih😆` }, { quoted: msg})
 }
@@ -3051,8 +3051,8 @@ break
 case 'battlegrounds-logo':
 case 'battlefield4': case 'text-8bit':{
 if (cekUser("id", sender) == null) return conn.sendMessage(from, { text: mess.OnlyUser, footer: `Powerd By - @${setting.kontakOwner}`, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak })
-if (!q4 && !q5) return reply(`Gunakan text1|text2\nContoh ${prefix+command}  Rama|kece`)
-if (!q.includes('|')) return reply(`Gunakan text1|text2\nContoh ${prefix+command}  Rama|kece`)
+if (!q4 && !q5) return reply(`Gunakan text1|text2\nContoh ${prefix+command}  Iyan|kece`)
+if (!q.includes('|')) return reply(`Gunakan text1|text2\nContoh ${prefix+command}  Iyan|kece`)
 reply(mess.wait)
 conn.sendMessage(from, { image: { url: `https://api.zeeoneofc.my.id/api/photooxy/${command}?text=${q4}&text2=${q5}&apikey=${setting.zeeonekey}` }, caption: `Nih Logo nya ${command}🖼️` }, { quoted: msg})
 }
