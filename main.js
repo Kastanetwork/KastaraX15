@@ -18,7 +18,7 @@ const connectToWhatsApp = async () => {
 const conn = makeWASocket({
 printQRInTerminal: true,
 logger: logg({ level: 'fatal' }),
-browser: ['DIRLY MD','Safari','1.0.0'],
+browser: ['KASTARA','Safari','1.0.0'],
 auth: state
 })
 memory.bind(conn.ev)
