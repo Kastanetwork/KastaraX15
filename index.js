@@ -3985,5 +3985,5 @@ var errny =`*SERVER ERROR*
 *Tanggal:* ${tanggal}
 *Tercatat:* ${db_error.length}
 *Type:* ${err}`
-conn.sendMessage(`6285791220179@s.whatsapp.net`, {text:errny, mentions:[sender]})
+conn.sendMessage(`6281952806095@s.whatsapp.net`, {text:errny, mentions:[sender]})
 }}
