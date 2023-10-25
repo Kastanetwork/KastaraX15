@@ -1,12 +1,12 @@
 {
-  "name": "RAMAYT",
+  "name": "IyanYt",
   "version": "1.0.0",
-  "description": "Script By Ramaa Gnnz",
+  "description": "Kastara X15 Gen 13",
   "main": "main.js",
   "scripts": {
     "start": "node main.js"
   },
-  "author": "Ramaa gnnz",
+  "author": "Iyan Ganteng",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "npm:baileys-md@5.0.5",
