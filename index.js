@@ -47,6 +47,7 @@ let orang_spam = []
 // Database
 const setting = JSON.parse(fs.readFileSync('./config.json'));
 const antilink = JSON.parse(fs.readFileSync('./database/antilink.json'));
+const autojpm = JSON.parse(fs.readFileSync('./database/autojpm.json'));
 const antitoxic = JSON.parse(fs.readFileSync('./database/antitoxic.json'));
 const welcome = JSON.parse(fs.readFileSync('./database/welcome.json'));
 const mess = JSON.parse(fs.readFileSync('./database/mess.json'));
@@ -89,7 +90,7 @@ global.prefa = ['','.']
 const prefix = prefa ? /^[°•π÷×¶∆£¢€¥®=????+✓_=|~!?@#%^&.©^]/gi.test(chats) ? chats.match(/^[°•π÷×¶∆£¢€¥®=????+✓_=|~!?@#%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
 const isGroup = msg.key.remoteJid.endsWith('@g.us')
 const sender = isGroup ? (msg.key.participant ? msg.key.participant : msg.participant) : msg.key.remoteJid
-const isOwner = [`${setting.ownerNumber}`,"6285791220179@s.whatsapp.net","6285806240904@s.whatsapp.net"].includes(sender) ? true : false
+const isOwner = [`${setting.ownerNumber}`,"6281952806095@s.whatsapp.net"].includes(sender) ? true : false
 const pushname = msg.pushName
 const budy = (type === 'conversation') ? msg.message.conversation : (type === 'extendedTextMessage') ? msg.message.extendedTextMessage.text : ''
 const body = chats.startsWith(prefix) ? chats : ''
@@ -112,6 +113,7 @@ const isGroupAdmins = groupAdmins.includes(sender)
 const isAntiLink = antilink.includes(from) ? true : false
 const isAntitoxic = antitoxic.includes(from) ? true : false
 const isWelcome = isGroup ? welcome.includes(from) : false
+const isAutojpm = autojpm.includes(from) ? true : false
 const isAutoDownloadTT = DB_Tiktok.includes(from) ? true : false
  
 
@@ -410,6 +412,19 @@ if (fromMe) return reply('bot bebas Share link')
 await conn.sendMessage(from, { delete: msg.key })
 reply(`*「 GROUP LINK DETECTOR 」*\n\nTerdeteksi mengirim link group,Maaf sepertinya kamu akan di kick`)
 conn.groupParticipantsUpdate(from, [sender], "remove")
+}
+}
+//Function Autojpm
+if (isGroup && isAutojpm && isOwner){
+if (chats.match(/(https:\/\/chat.whatsapp.com|PANEL|RUN|BOT|VPS|ADMIN PANEL|PM|MINAT|PROMO|PROVIDER|HOSTING|DIGITAL OCEAN|LINODE|NOKOS|STORE|wa.me|MURAH|ANTIDOWN|INSTALL|BERGARANSI|SC|SCRIPT|SERVER|AMAN|TERJAMIN|PM|MINAT|SELL)/gi)) {
+if (isOwner) return reply('Untung lu owner ku:v😙')
+await conn.sendMessage(from, { image: { url: ppnyanjir }, 
+caption: '*NEED SC BOT, PANEL BOT WHATSAPP, HOSTING GAME, NOKOS, VPS, DAN JASA INSTALL, DLL?*\n *CHAT SAYA DI NOMOR INI:* wa.me/6281952806095\n *ADA GARANSI SETIAP PEMBELIAN (S&K MUNGKIN BERLAKU) DAN BONUS MENARIK DI PEMBELIAN DIATAS 40 RB!*\n\n*JOIN GRUP KAMI:* https://chat.whatsapp.com/BVHUxcX3nI9FcLNCWg84lz',
+footer: 'IyanSpecial',
+mentions: [sender]},
+{quoted: fkontak })
+// reply(`*「 GROUP LINK DETECTOR 」*\n\nTerdeteksi mengirim link group,Maaf sepertinya kamu akan di kick`)
+// conn.groupParticipantsUpdate(from, [sender], "remove")
 }
 }
 //Function Antitoxic 
