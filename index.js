@@ -139,7 +139,7 @@ const mention = typeof(mentionByTag) == 'string' ? [mentionByTag] : mentionByTag
 mention != undefined ? mention.push(mentionByReply) : []
 const mentionUser = mention != undefined ? mention.filter(n => n) : []
 
-const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `ᴅ  ɪ  ʀ  ʟ  ʏ    ʙ  ᴏ  ᴛ   〆\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;᭖͜͡𝗗𝗜𝗥𝗥𝗢𝗡𝗘 𝗢𝗙𝗖,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/thumbnail.jpg')}}}
+const fkontak = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `*KASTARA X15 GEN 13*\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;᭖͜͡𝗗𝗜𝗥𝗥𝗢𝗡𝗘 𝗢𝗙𝗖,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/thumbnail.jpg')}}}
 const fbc = { key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { 'contactMessage': { 'displayName': `---[ BROADCAST ]---\n`, 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;᭖͜͡𝗗𝗜𝗥𝗥𝗢𝗡𝗘 𝗢𝗙𝗖,;;;\nFN:${pushname},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`, 'jpegThumbnail': fs.readFileSync('./media/thumbnail.jpg')}}}
 
 const isUrl = (url) => {
@@ -556,742 +556,7 @@ const strip_ny = more.repeat(4001)
 var footer_nya =`${setting.botName} © 2023`
 let simbol = `${pickRandom(["⭔","⌬","𓄼","»"])}`
 reply('```Loading..⌛\nTampilan menu sedang diProses dalam 3detik🍁```')
-let menu_nya = `╭━━━━━━━━━━━━━━━┅•ิ.•ஐ
-│───「 *ALL MENU* 」────
-├────────────────┾🪀┿
-│
-│  *⫍* 𝗠𝗔𝗜𝗡 𝗠𝗘𝗡𝗨 *⫎*
-│
-│${simbol} .simi    
-│${simbol} .verify
-│${simbol} .toimg
-│${simbol} .tes
-│${simbol} .owner
-│${simbol} .runtime
-│${simbol} .ping
-│${simbol} .toimg
-│${simbol} .sticker
-│${simbol} .infoupdate
-│${simbol} .groupbot
-│${simbol} .request
-│${simbol} .donasi
-│${simbol} .donate
-│
-├────────────────┾🚹┿
-│
-│  *⫍* 𝗔𝗡𝗢𝗡𝗬𝗠𝗢𝗨𝗦 𝗖𝗛𝗔𝗧 *⫎*
-│
-│${simbol} .chat
-│${simbol} .skip
-│${simbol} .start
-│${simbol} .secret
-│${simbol} .confess
-│${simbol} .menfess
-│${simbol} .secretchat
-│${simbol} .stopchat
-│
-├────────────────┾🤴┿
-│
-│  *⫍* 𝗢𝗪𝗡𝗘𝗥 𝗠𝗘𝗡𝗨 *⫎*
-│
-│${simbol} .error
-│${simbol} .runtime
-│${simbol} .session
-│${simbol} .resetdb
-│${simbol} .addprem _@tag / 628xxx_
-│${simbol} .delprem _@tag / 628xxx_
-│${simbol} .autobio _(on/off)_
-│${simbol} .setbiobot
-│${simbol} .setwm _packname|author_
-│${simbol} .join  _<link group>_
-│${simbol} .listuser
-│${simbol} .listupc
-│${simbol} .broadcast
-│${simbol} .bctext
-│${simbol} .bcvidio
-│${simbol} .bcimage
-│${simbol} .bcgambar
-│${simbol} .bcaudio
-│${simbol} .creategc
-│${simbol} .buatgroup
-│${simbol} .block
-│${simbol} .unblock
-│
-├────────────────┾🔎┿
-│
-│ *⫍ SEARCH MENU ⫎*
-│
-│${simbol} .wallpaper
-│${simbol} .komikku
-│${simbol} .happymod
-│${simbol} .jadwaltv
-│${simbol} .google
-│
-├────────────────┾⬇️┿
-│
-│  *⫍* 𝘿𝙊𝙒𝙉𝙇𝙊𝘼𝘿 𝗠𝗘𝗡𝗨 *⫎*
-│
-│${simbol} .tiktok
-│${simbol} .gitclone
-│${simbol} .mediafire
-│
-├────────────────┾ℹ️┿
-│
-│  *⫍ INFORMATION MENU ⫎*
-│
-│${simbol} .jadwaltv
-│${simbol} .tv
-│${simbol} .gempa
-│${simbol} .bioskop
-│
-├────────────────┾🗳️┿
-│  
-│  *⫍ CONVERT MENU⫎*
-│
-│${simbol} .tourl
-│${simbol} .nulis
-│${simbol} .toimg
-│${simbol} .sticker
-│${simbol} .s
-│${simbol} .smeme
-│${simbol} .stickermeme
-│${simbol} .emojimix
-│${simbol} .emojimix2
-│${simbol} .spamcall
-│${simbol} .tupai
-│${simbol} .robot
-│${simbol} .blown
-│${simbol} .smooth
-│${simbol} .fat
-│${simbol} .fast
-│${simbol} .slow
-│${simbol} .bass
-│${simbol} .deep
-│${simbol} .reverse
-│
-├────────────────┾🎮┿
-│
-│  *⫍ GAME MENU ⫎*
-│
-│${simbol} .caklontong
-│${simbol} .tebakgambar
-│${simbol} .tebakkata
-│${simbol} .tekateki
-│${simbol} .asahotak
-│${simbol} .tebakkalimat
-│${simbol} .tebakbendera
-│${simbol} .siapakahaku
-│${simbol} .susunkata
-│${simbol} .tebaklirik
-│${simbol} .tebakkimia
-│${simbol} .tebaktebakan
-│
-├────────────────┾🏢┿
-│
-│  *⫍* 𝗚𝗥𝗢𝗨𝗣 𝗠𝗘𝗡𝗨 *⫎*
-│
-│${simbol} .hidetag
-│${simbol} .tagall
-│${simbol} .fitnah
-│${simbol} .delete
-│${simbol} .revoke
-│${simbol} .linkgrup
-│${simbol} .linkgc
-│${simbol} .setdesc
-│${simbol} .add _62xx_
-│${simbol} .antilink _on_
-│${simbol} .antilink _off_
-│${simbol} .antitoxic _on_
-│${simbol} .antitoxic _off_
-│${simbol} .demote
-│${simbol} .promote
-│${simbol} .setppgrup
-│${simbol} .kick   _(@tag/reply pesan)_
-│${simbol} .setnamegc
-│${simbol} .group _open_
-│${simbol} .group _close_
-│${simbol} .welcome _on_
-│${simbol} .welcome _off_
-│
-├────────────────┾💌┿
-│
-│ *⫍ MENFESS MENU ⫎*
-│
-│${simbol} .confess
-│${simbol} .menfess _628xx|Nama|Pesan_
-│
-│ [ NOTE: FITUR MENFESS
-│MENGGUNAKAN BUTTON DAN
-│TIDAK BISA DI DIUBAH... ]
-├────────────────┾🕵️‍♀️┿
-│
-│  *⫍ STALKER MENU ⫎*
-│
-│${simbol} .ffstalk *id*
-│${simbol} .mlstalk *id|zone*
-│${simbol} .npmstalk *packname*
-│${simbol} .githubstalk *username*
-│
-├────────────────┾🧮┿
-│
-│  *⫍* 𝗞𝗔𝗟𝗞𝗨𝗟𝗔𝗧𝗢𝗥 *⫎*
-│
-│${simbol} .kali _angka angka_
-│${simbol} .bagi _angka angka_
-│${simbol} .kurang _angka angka_
-│${simbol} .tambah _angka angka_
-│
-├────────────────┾🛍️┿
-│
-│  *⫍* 𝗦𝗧𝗢𝗥𝗘 𝗠𝗘𝗡𝗨 *⫎*
-│
-│${simbol} .list _<menggunakan button>_ 
-│${simbol} .addlist _key@pesan_
-│${simbol} .dellist _<options>_
-│${simbol} .update _key@pesan_
-│${simbol} .proses _<reply orderan>_
-│${simbol} .done _<reply orderan>_
-│
-├────────────────┾📼┿
-│
-│  *⫍* 𝘼𝙐𝘿𝙄𝙊 𝘾𝙃𝘼𝙉𝙂𝙀𝙍 *⫎*
-│
-│${simbol} .tupai
-│${simbol} .robot
-│${simbol} .blown
-│${simbol} .smooth
-│${simbol} .fat
-│${simbol} .fast
-│${simbol} .slow
-│${simbol} .bass
-│${simbol} .deep
-│${simbol} .reverse
-│
-├────────────────┾👩┿
-│
-│  *⫍ ASUPAN MENU ⫎*
-│
-│${simbol} .rikagusriani
-│${simbol} .bocil
-│${simbol} .geayubi
-│${simbol} .santuy
-│${simbol} .ukhty
-│${simbol} .asupan
-│${simbol} .delvira
-│${simbol} .ayu
-│${simbol} .bunga
-│${simbol} .aura
-│${simbol} .chika
-│${simbol} .nisa
-│${simbol} .ziva
-│${simbol} .yana
-│${simbol} .viona
-│${simbol} .syania
-│${simbol} .riri
-│${simbol} .syifa
-│${simbol} .mama_gina
-│${simbol} .alcakenya
-│${simbol} .mangayutri
-│
-├────────────────┾💦┿
-│
-│ *⫍ NSFW MENU ⫎*
-│
-│${simbol} .baka
-│${simbol} .smug
-│${simbol} .neko_sfw
-│${simbol} .hentai_gif
-│${simbol} .spank
-│${simbol} .blowjob
-│${simbol} .cumarts
-│${simbol} .eroyuri
-│${simbol} .eroneko
-│${simbol} .erokemonomimi
-│${simbol} .erokitsune
-│${simbol} .ero
-│${simbol} .feet
-│${simbol} .erofeet
-│${simbol} .feetgif
-│${simbol} .femdom
-│${simbol} .futanari
-│${simbol} .hentai
-│${simbol} .holoero
-│${simbol} .holo
-│${simbol} .keta
-│${simbol} .kitsune
-│${simbol} .kemonomimi
-│${simbol} .pussyart
-│${simbol} .pussywankgif
-│${simbol} .girl_solo
-│${simbol} .girl_solo_gif
-│${simbol} .tits
-│${simbol} .trap
-│${simbol} .yuri
-│${simbol} .avatar2
-│${simbol} .anal
-│${simbol} .bj
-│${simbol} .boobs
-│${simbol} .classic
-│${simbol} .cumsluts
-│${simbol} .kuni
-│${simbol} .lesbian
-│${simbol} .neko
-│${simbol} .neko_gif
-│${simbol} .ahegao
-│${simbol} .bdsm
-│${simbol} .cuckold
-│${simbol} .cum
-│${simbol} .foot
-│${simbol} .gangbang
-│${simbol} .glasses
-│${simbol} .jahy
-│${simbol} .masturbation
-│${simbol} .nsfw_neko
-│${simbol} .orgy
-│${simbol} .panties
-│${simbol} .tentacles
-│${simbol} .thighs
-│${simbol} .zettai
-│
-├────────────────┾🎶┿
-│
-│  *⫍* 𝙎𝙊𝙐𝙉𝘿 𝗠𝗘𝗡𝗨 *⫎* 
-│
-│${simbol} .sound1
-│${simbol} .sound2
-│${simbol} .sound3
-│${simbol} .sound4
-│${simbol} .sound5
-│${simbol} .sound6
-│${simbol} .sound7
-│${simbol} .sound8
-│${simbol} .sound9
-│${simbol} .sound10
-│${simbol} .sound11
-│${simbol} .sound12
-│${simbol} .sound13
-│${simbol} .sound14
-│${simbol} .sound15
-│${simbol} .sound16
-│${simbol} .sound17
-│${simbol} .sound18
-│${simbol} .sound19
-│${simbol} .sound20
-│${simbol} .sound21
-│${simbol} .sound22
-│${simbol} .sound23
-│${simbol} .sound24
-│${simbol} .sound25
-│${simbol} .sound26
-│${simbol} .sound27
-│${simbol} .sound28
-│${simbol} .sound29
-│${simbol} .sound30
-│${simbol} .sound31
-│${simbol} .sound32
-│${simbol} .sound33
-│${simbol} .sound34
-│${simbol} .sound35
-│${simbol} .sound36
-│${simbol} .sound37
-│${simbol} .sound38
-│${simbol} .sound39
-│${simbol} .sound40
-│${simbol} .sound41
-│${simbol} .sound42
-│${simbol} .sound43
-│${simbol} .sound44
-│${simbol} .sound45
-│${simbol} .sound46
-│${simbol} .sound47
-│${simbol} .sound48
-│${simbol} .sound49
-│${simbol} .sound50
-│${simbol} .sound51
-│${simbol} .sound52
-│${simbol} .sound53
-│${simbol} .sound54
-│${simbol} .sound55
-│${simbol} .sound56
-│${simbol} .sound57
-│${simbol} .sound58
-│${simbol} .sound59
-│${simbol} .sound60
-│
-├────────────────┾😸┿
-│
-│  *⫍* 𝙁𝙐𝙉 𝗠𝗘𝗡𝗨 *⫎* 
-│
-│${simbol} .baikcek
-│${simbol} .jahatcek
-│${simbol} .anjingcek
-│${simbol} .haramcek
-│${simbol} .pakboycek
-│${simbol} .pakgirlcek
-│${simbol} .sangecek 
-│${simbol} .bapercek
-│${simbol} .fakboycek
-│${simbol} .alimcek
-│${simbol} .suhucek
-│${simbol} .fakgirlcek
-│${simbol} .kerencek
-│${simbol} .wibucek
-│${simbol} .goblokcek 
-│${simbol} .jelekcek 
-│${simbol} .gaycek
-│${simbol} .lesbicek
-│${simbol} .gantengcek 
-│${simbol} .cantikcek
-│${simbol} .begocek 
-│${simbol} .suhucek
-│${simbol} .pintercek
-│${simbol} .jagocek
-│${simbol} .nolepcek
-│${simbol} .babicek
-│${simbol} .bebancek
-│
-├────────────────┾🦜┿
-│
-│  *⫍ PRIMBON MENU ⫎*
-│
-│${simbol} .artinama
-│${simbol} .artimimpi
-│${simbol} .ceknama
-│${simbol} .kecokokannama
-│${simbol} .ramaljodohbali
-│${simbol} .suamiistri
-│${simbol} .sifatusaha
-│${simbol} .ramalanjodoh
-│${simbol} .ramalancinta
-│${simbol} .rezeki
-│${simbol} .pekerjaan
-│${simbol} .ramalnasib
-│${simbol} .potensipenyakit
-│${simbol} .tarot
-│${simbol} .fengsui
-│${simbol} .haribaik
-│${simbol} .harisangar
-│${simbol} .harisial
-│${simbol} .harinaga
-│${simbol} .arahrezeki
-│${simbol} .peruntungan
-│${simbol} . sifat
-│${simbol} .karakter
-│${simbol} .wetonjawa
-│${simbol} .memancing
-│${simbol} .masakubur
-│${simbol} .keberuntungan
-│
-├────────────────┾📮┿
-│
-│  *⫍* 𝙍𝘼𝙉𝘿𝙊𝙈 𝙄𝙈𝘼𝙂𝙀 *⫎*
-│
-│${simbol} .boneka
-│${simbol} .cecan
-│${simbol} .cogan
-│${simbol} .darkjokes
-│${simbol} .ppcouple
-│
-├────────────────┾📒┿
-│
-│ *⫍ TEXTPRO MENU 1⃣⫎*
-│
-│${simbol} .pencil
-│${simbol} .halloween2
-│${simbol} .blackpink
-│${simbol} .rainbow2
-│${simbol} .water_pipe
-│${simbol} .halloween
-│${simbol} .sketch
-│${simbol} .sircuit
-│${simbol} .discovery
-│${simbol} .metallic2
-│${simbol} .fiction
-│${simbol} .demon
-│${simbol} .transformer
-│${simbol} .berry
-│${simbol} .thunder
-│${simbol} .magma
-│${simbol} .3dstone
-│${simbol} .neon
-│${simbol} .glitch
-│${simbol} .harry_potter
-│${simbol} .embossed
-│${simbol} .broken
-│${simbol} .papercut
-│${simbol} .gradient
-│${simbol} .metallic 
-│${simbol} .naruto 
-│${simbol} .butterfly 
-│${simbol} .flaming 
-│${simbol} .glossy
-│${simbol} .watercolor
-│${simbol} .multicolor
-│${simbol} .neon_devil
-│${simbol} .underwater
-│${simbol} .bear
-│${simbol} .wonderfulg
-│${simbol} .christmas
-│${simbol} .neon_light
-│${simbol} .snow
-│${simbol} .cloudsky
-│${simbol} .luxury2
-│${simbol} .gradient2
-│${simbol} .summer
-│${simbol} .writing
-│${simbol} .engraved
-│${simbol} .summery
-│${simbol} .3dglue
-│${simbol} .metaldark
-│${simbol} .neonlight
-│${simbol} .oscar
-│${simbol} .minion
-│${simbol} .holographic
-│${simbol} .purple
-│${simbol} .glossyb
-│${simbol} .deluxe2
-│${simbol} .glossyc
-│${simbol} .fabric
-│${simbol} .neonc
-│${simbol} .newyear
-│${simbol} .newyear2
-│${simbol} .metals
-│${simbol} .xmas
-│${simbol} .blood
-│${simbol} .darkg
-│${simbol} .joker
-│${simbol} .wicker
-│${simbol} .natural
-│${simbol} .firework
-│${simbol} .skeleton
-│${simbol} .balloon
-│${simbol} .balloon2
-│${simbol} .balloon3
-│${simbol} .balloon4
-│${simbol} .balloon5
-│${simbol} .balloon6
-│${simbol} .balloon7
-│${simbol} .steel
-│${simbol} .gloss
-│${simbol} .denim
-│${simbol} .decorate
-│${simbol} .decorate2
-│${simbol} .peridot
-│${simbol} .rock
-│${simbol} .glass
-│${simbol} .glass2
-│${simbol} .glass3
-│${simbol} .glass4
-│${simbol} .glass5
-│${simbol} .glass6
-│${simbol} .glass7
-│${simbol} .glass8
-│${simbol} .captain_as2
-│${simbol} .robot
-│${simbol} .equalizer
-│${simbol} .toxic
-│${simbol} .sparkling
-│${simbol} .sparkling2
-│${simbol} .sparkling3
-│${simbol} .sparkling4
-│${simbol} .sparkling5
-│${simbol} .sparkling6
-│${simbol} .sparkling7
-│${simbol} .decorative
-│${simbol} .chocolate
-│${simbol} .strawberry
-│${simbol} .koifish
-│${simbol} .bread
-│${simbol} .matrix
-│${simbol} .blood2
-│${simbol} .neonligth2
-│${simbol} .thunder2
-│${simbol} .3dbox
-│${simbol} .neon2
-│${simbol} .roadw
-│${simbol} .bokeh
-│${simbol} .gneon
-│${simbol} .advanced
-│${simbol} .dropwater
-│${simbol} .wall
-│${simbol} .chrismast
-│${simbol} .honey
-│${simbol} .drug
-│${simbol} .marble
-│${simbol} .marble2
-│${simbol} .ice
-│${simbol} .juice
-│${simbol} .rusty
-│${simbol} .abstra
-│${simbol} .biscuit
-│${simbol} .wood
-│${simbol} .scifi
-│${simbol} .metalr
-│${simbol} .purpleg
-│${simbol} .shiny
-│${simbol} .jewelry
-│${simbol} .jewelry2
-│${simbol} .jewelry3
-│${simbol} .jewelry4
-│${simbol} .jewelry5
-│${simbol} .jewelry6
-│${simbol} .jewelry7
-│${simbol} .jewelry8
-│${simbol} .metalh
-│${simbol} .golden
-│${simbol} .glitter
-│${simbol} .glitter2
-│${simbol} .glitter3
-│${simbol} .glitter4
-│${simbol} .glitter5
-│${simbol} .glitter6
-│${simbol} .glitter7
-│${simbol} .metale
-│${simbol} .carbon
-│${simbol} .candy
-│${simbol} .metalb
-│${simbol} .gemb
-│${simbol} .3dchrome
-│${simbol} .metalb2
-│${simbol} .metalg
-│
-├────────────────┾📒┿
-│
-│ *⫍ TEXTPRO MENU 2️⃣⫎*
-│
-│${simbol} .gtiktok
-│${simbol} .stone
-│${simbol} .marvel
-│${simbol} .marvel2
-│${simbol} .pornhub
-│${simbol} .avengers
-│${simbol} .metalr
-│${simbol} .metalg
-│${simbol} .metalg2
-│${simbol} .lion
-│${simbol} .wolf_bw
-│${simbol} .wolf_g
-│${simbol} .ninja
-│${simbol} .3dsteel
-│${simbol} .horror2
-│${simbol} .lava
-│${simbol} .bagel
-│${simbol} .horror
-│${simbol} .game8bit
-│${simbol} .layered
-│${simbol} .glitch2
-│${simbol} .coolg
-│${simbol} .coolwg
-│${simbol} .realistic
-│${simbol} .space3d
-│${simbol} .battlegrounds-logo
-│${simbol} .battlefield4
-│${simbol} .text-8bit
-│
-├────────────────┾📓┿
-│
-│  *⫍* 𝙀𝙋𝙃𝙊𝙏𝙊 𝙈𝙀𝙉𝙐 *⫎*
-│
-│${simbol} .youtubegold
-│${simbol} .youtubesilver
-│${simbol} .facebookgold
-│${simbol} .facebooksilver
-│${simbol} .instagramgold
-│${simbol} .instagramsilver
-│${simbol} .twittergold
-│${simbol} .twittersilver
-│${simbol} .retrotext
-│${simbol} .halloweenbats
-│${simbol} .texthalloween
-│${simbol} .cardhalloween
-│${simbol} .birthdaycake
-│${simbol} .thundertext
-│${simbol} .icetext
-│${simbol} .milkcake
-│${simbol} .snowontext
-│${simbol} .metalstar
-│${simbol} .dragonfire
-│${simbol} .zombie3d
-│${simbol} .merrycard
-│${simbol} .generalexam
-│${simbol} .viettel
-│${simbol} .embroider
-│${simbol} .graffititext
-│${simbol} .graffititext2
-│${simbol} .graffititext3
-│${simbol} .covergraffiti
-│${simbol} .moderngold
-│${simbol} .capercut
-│${simbol} .lovecard
-│${simbol} .heartflashlight
-│${simbol} .heartcup
-│${simbol} .sunglightshadow
-│${simbol} .graffiti3d
-│${simbol} .moderngoldsilver
-│${simbol} .moderngold2
-│${simbol} .modengold3
-│${simbol} .fabrictext
-│${simbol} .masteryavatar
-│${simbol} .messagecoffee
-│${simbol} .announofwin
-│${simbol} .writeblood
-│${simbol} .horrorletter
-│${simbol} .writehorror
-│${simbol} .shirtclub
-│${simbol} .angelwing
-│${simbol} .christmasseason
-│${simbol} .projectyasuo
-│${simbol} .lovelycute
-│${simbol} .womansday
-│${simbol} .covergamepubg
-│${simbol} .nameonheart
-│${simbol} .funnyhalloween
-│${simbol} .lightningpubg
-│${simbol} .greetingcardvideo
-│${simbol} .christmascard
-│${simbol} .galaxybat
-│${simbol} .writegalaxy
-│${simbol} .starsnight
-│${simbol} .noeltext
-│${simbol} .textcakes
-│${simbol} .pubgbirthday
-│${simbol} .galaxywallpaper
-│${simbol} .pubgglicthvideo
-│${simbol} .pubgmascotlogo
-│${simbol} .realembroidery
-│${simbol} .vintagetelevision
-│${simbol} .funnyanimations
-│${simbol} .glowingtext
-│${simbol} .textonglass
-│${simbol} .cartoonstyle
-│${simbol} .multicolor
-│${simbol} .watercolor2
-│${simbol} .textsky
-│${simbol} .summerbeach
-│${simbol} .1917text
-│${simbol} .puppycute
-│ ${simbol} .rosebirthday
-│
-├────────────────┾🦠┿
-│
-│  *⫍* 𝗕𝗨𝗚𝗩𝗜𝗣 𝗠𝗘𝗡𝗨 *⫎*
-│
-│${simbol} .philips *628xxx*
-│${simbol} .philips2 *628xxx*
-│${simbol} .philips3 *628xxx*
-│${simbol} .santet *@tag*
-│${simbol} .santet2 *@tag*
-│${simbol} .santet3 *@tag*
-│${simbol} .virtex *628xxx*
-│${simbol} .virtex2 *628xxx*
-│${simbol} .virtex3 *628xxx*
-│${simbol} .bug1 *628xxx*
-│${simbol} .bug2 *628xxx*
-│${simbol} .bug3 *628xxx*
-│${simbol} .bug4 *628xxx*
-│${simbol} .bug5 *628xxx*
-│
-╰━━━━━━━━━━━━━━━━┅•ิ.•ஐ
+let menu_nya = `
 `
 let buttonmenu = [
 {buttonId: '#listmenu', buttonText: {displayText: '️䳈 Lɪsᴛ Mᴇɴᴜ'}, type: 1},
@@ -1311,40 +576,504 @@ const more = String.fromCharCode(8206)
 const strip_ny = more.repeat(4001)
 let bio = (await conn.fetchStatus(sender).catch(console.error) || {}).status || '-'
 let simbol = `${pickRandom(["⭔","⌬","𓄼","»"])}`
+let ppnyanjir = 'https://bit.ly/ppnyanjir'
 var footer_nya =`Creator by - ${setting.ownerName}`
-let tampilan_nya = `╭━━━━━━━━━━━━━━━┅•ิ.•ஐ
-│ *${ucapanWaktu} 🌻 @${sender.split('@')[0]}*                             
-└┬────────────┾•ิ.•┽
-┌┤     【 *BOT INFO🤖* 】
-││
-││○ *BotName* : ${setting.botName} 
-││○ *User* : ${("id", db_user).length}
-││○ *Owner* : @${setting.kontakOwner}
-││○ *Library* : 𝗕𝗮𝗶𝗹𝗲𝘆𝘀-𝗠𝗗
-││○ *Runtime* : ${runtime(process.uptime())}
-││○ *Creator* : ʀᴀᴍᴀᴀ ɢɴɴᴢ 
-│└────────────┾•ิ.•┽
-│      【 *USER INFO👤* 】
-│
-│○ *Name* : @${sender.split('@')[0]}
-│○ *Id* : ${cekUser("name", sender)}
-│○ *Bio* : ${bio ? bio : '-'}
-│○ *Premium* : (${cekUser("premium", sender)? '✓':'✘'})
-│○ *Status* : ${isOwner ? 'Owner' : 'User'} ${setting.botName}
-│
-├──────────────┾•ิ.•┽
-│
-│        *COMMAND*
-│${simbol} .allmenu
-╰━━━━━━━━━━━━━━━━┅•ิ.•ஐ 
-`
-let btn_menu = [
-{buttonId: '#listmenu', buttonText: {displayText: '️䳈 Lɪsᴛ Mᴇɴᴜ'}, type: 1},
-{buttonId: '#allmenu', buttonText: {displayText: '️䳈 Aʟʟ Mᴇɴᴜ'}, type: 1},
-{buttonId: '#Rules', buttonText: {displayText: '️䳈 Rᴜʟᴇs'}, type: 1},
+let teksmenunya = `*${ucapanWaktu} 🌻 @${sender.split('@')[0]}*                             
 
-]
-conn.sendMessage(from, { text: tampilan_nya, footer: footer_nya, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak})
+*BOT INFO*
+○ *BotName* : ${setting.botName} 
+○ *User* : ${("id", db_user).length}
+○ *Owner* : @${setting.kontakOwner}
+○ *Library* : Baileys Md
+○ *Runtime* : ${runtime(process.uptime())}
+○ *Creator* : @${owner.split('@')[0]}
+
+*USER INFO*
+○ *Name* : @${sender.split('@')[0]}
+○ *Id* : ${cekUser("name", sender)}
+○ *Bio* : ${bio ? bio : '-'}
+○ *Premium*: (${cekUser("premium", sender)? '✓':'✘'})
+○ *Status* :${isOwner ? 'Owner' : 'User'} ${setting.botName}
+
+*MAIN MENU*
+» .simi   
+» .verify
+» .toimg
+» .tes
+» .owner
+» .runtime
+» .ping
+» .toimg
+» .sticker
+» .infoupdate
+» .groupbot
+» .request
+» .donasi
+» .donate
+
+*ANONYMOUS CHAT*
+» .chat
+» .skip
+» .start
+» .secret
+» .confess
+» .menfess
+» .secretchat
+» .stopchat
+
+*OWNER MENU*
+» .error
+» .runtime
+» .session
+» .resetdb
+» .addprem _@tag / 628xxx_
+» .delprem _@tag / 628xxx_
+» .autobio _(on/off)_
+» .setbiobot
+» .setwm _packname|author_
+» .join _<link group>_
+» .listuser
+» .listupc
+» .broadcast
+» .bctext
+» .bcvidio
+» .bcimage
+» .bcgambar
+» .bcaudio
+» .creategc
+» .buatgroup
+» .block
+» .unblock
+
+*SEARCH MENU*
+» .wallpaper
+» .komikku
+» .happymod
+» .jadwaltv
+» .google
+
+*DOWNLOADER*
+» .tiktok
+» .gitclone
+» .mediafire
+
+*INFORMATION MENU*
+» .jadwaltv
+» .tv
+» .gempa
+» .bioskop
+
+*CONVERT MENU*
+» .tourl
+» .nulis
+» .toimg
+» .sticker
+» .s
+» .smeme
+» .stickermeme
+» .emojimix
+» .emojimix2
+» .spamcall
+» .tupai
+» .robot
+» .blown
+» .smooth
+» .fat
+» .fast
+» .slow
+» .bass
+» .deep
+» .reverse
+
+*GAME MENU*
+» .caklontong
+» .tebakgambar
+» .tebakkata
+» .tekateki
+» .asahotak
+» .tebakkalimat
+» .tebakbendera
+» .siapakahaku
+» .susunkata
+» .tebaklirik
+» .tebakkimia
+» .tebaktebakan
+
+*GROUP MENU*
+» .hidetag
+» .tagall
+» .fitnah
+» .delete
+» .revoke
+» .linkgrup
+» .linkgc
+» .setdesc
+» .add _62xx_
+» .antilink _on_
+» .antilink _off_
+» .antitoxic _on_
+» .antitoxic _off_
+» .demote
+» .promote
+» .setppgrup
+» .kick  _(@tag/reply pesan)_
+» .setnamegc
+» .group _open_
+» .group _close_
+» .welcome _on_
+» .welcome _off_
+
+*MENFESS MENU*
+
+» .confess
+» .menfess _628xx|Nama|Pesan_
+
+ [ NOTE: FITUR MENFESS
+MENGGUNAKAN BUTTON DAN
+TIDAK BISA DI DIUBAH... ]
+
+*STALKER MENU*
+» .ffstalk *id*
+» .mlstalk *id|zone*
+» .npmstalk *packname*
+» .githubstalk *username*
+
+*KALKULATOR*
+» .kali _angka angka_
+» .bagi _angka angka_
+» .kurang _angka angka_
+» .tambah _angka angka_
+
+*STORE MENU*
+» .list _<menggunakan button>_ 
+» .addlist _key@pesan_
+» .dellist _<options>_
+» .update _key@pesan_
+» .proses _<reply orderan>_
+» .done _<reply orderan>_
+
+*AUDIO CHANGER*
+» .tupai
+» .robot
+» .blown
+» .smooth
+» .fat
+» .fast
+» .slow
+» .bass
+» .deep
+» .reverse
+
+*ASUPAN MENU*
+» .rikagusriani
+» .bocil
+» .geayubi
+» .santuy
+» .ukhty
+» .asupan
+» .delvira
+» .ayu
+» .bunga
+» .aura
+» .chika
+» .nisa
+» .ziva
+» .yana
+» .viona
+» .syania
+» .riri
+» .syifa
+» .mama_gina
+» .alcakenya
+» .mangayutri
+
+*NSFW MENU*
+» .baka
+» .smug
+» .neko_sfw
+» .hentai_gif
+» .spank
+» .blowjob
+» .cumarts
+» .eroyuri
+» .eroneko
+» .erokemonomimi
+» .erokitsune
+» .ero
+» .feet
+» .erofeet
+» .feetgif
+» .femdom
+» .futanari
+» .hentai
+» .holoero
+» .holo
+» .keta
+» .kitsune
+» .kemonomimi
+» .pussyart
+» .pussywankgif
+» .girl_solo
+» .girl_solo_gif
+» .tits
+» .trap
+» .yuri
+» .avatar2
+» .anal
+» .bj
+» .boobs
+» .classic
+» .cumsluts
+» .kuni
+» .lesbian
+» .neko
+» .neko_gif
+» .ahegao
+» .bdsm
+» .cuckold
+» .cum
+» .foot
+» .gangbang
+» .glasses
+» .jahy
+» .masturbation
+» .nsfw_neko
+» .orgy
+» .panties
+» .tentacles
+» .thighs
+» .zettai
+
+*FUN MENU*
+» .baikcek
+» .jahatcek
+» .anjingcek
+» .haramcek
+» .pakboycek
+» .pakgirlcek
+» .sangecek 
+» .bapercek
+» .fakboycek
+» .alimcek
+» .suhucek
+» .fakgirlcek
+» .kerencek
+» .wibucek
+» .goblokcek 
+» .jelekcek 
+» .gaycek
+» .lesbicek
+» .gantengcek 
+» .cantikcek
+» .begocek 
+» .suhucek
+» .pintercek
+» .jagocek
+» .nolepcek
+» .babicek
+» .bebancek
+
+*RANDOM IMAGE*
+» .boneka
+» .cecan
+» .cogan
+» .darkjokes
+» .ppcouple
+
+*TEXTPRO MENU*
+» .pencil
+» .halloween2
+» .blackpink
+» .rainbow2
+» .water_pipe
+» .halloween
+» .sketch
+» .sircuit
+» .discovery
+» .metallic2
+» .fiction
+» .demon
+» .transformer
+» .berry
+» .thunder
+» .magma
+» .3dstone
+» .neon
+» .glitch
+» .harry_potter
+» .embossed
+» .broken
+» .papercut
+» .gradient
+» .metallic 
+» .naruto 
+» .butterfly 
+» .flaming 
+» .glossy
+» .watercolor
+» .multicolor
+» .neon_devil
+» .underwater
+» .bear
+» .wonderfulg
+» .christmas
+» .neon_light
+» .snow
+» .cloudsky
+» .luxury2
+» .gradient2
+» .summer
+» .writing
+» .engraved
+» .summery
+» .3dglue
+» .metaldark
+» .neonlight
+» .oscar
+» .minion
+» .holographic
+» .purple
+» .glossyb
+» .deluxe2
+» .glossyc
+» .fabric
+» .neonc
+» .newyear
+» .newyear2
+» .metals
+» .xmas
+» .bloom
+» .darkg
+» .joker
+» .wicker
+» .natural
+» .firework
+» .skeleton
+» .balloon
+» .balloon2
+» .balloon3
+» .balloon4
+» .balloon5
+» .balloon6
+» .balloon7
+» .steel
+» .gloss
+» .denim
+» .decorate
+» .decorate2
+» .peridot
+» .rock
+» .glass
+» .glass2
+» .glass3
+» .glass4
+» .glass5
+» .glass6
+» .glass7
+» .glass8
+» .captain_as2
+» .robot
+» .equalizer
+» .toxic
+» .sparkling
+» .sparkling2
+» .sparkling3
+» .sparkling4
+» .sparkling5
+» .sparkling6
+» .sparkling7
+» .decorative
+» .chocolate
+» .strawberry
+» .koifish
+» .bread
+» .matrix
+» .blood2
+» .neonligth2
+» .thunder2
+» .3dbox
+» .neon2
+» .roadw
+» .bokeh
+» .gneon
+» .advanced
+» .dropwater
+» .wall
+» .chrismast
+» .honey
+» .drug
+» .marble
+» .marble2
+» .ice
+» .juice
+» .rusty
+» .abstra
+» .biscuit
+» .wood
+» .scifi
+» .metalr
+» .purpleg
+» .shiny
+» .jewelry
+» .jewelry2
+» .jewelry3
+» .jewelry4
+» .jewelry5
+» .jewelry6
+» .jewelry7
+» .jewelry8
+» .metalh
+» .golden
+» .glitter
+» .glitter2
+» .glitter3
+» .glitter4
+» .glitter5
+» .glitter6
+» .glitter7
+» .metale
+» .carbon
+» .candy
+» .metalb
+» .gemb
+» .3dchrome
+» .metalb2
+» .metalg
+» .gtiktok
+» .stone
+» .marvel
+» .marvel2
+» .pornhub
+» .avengers
+» .metalr
+» .metalg
+» .metalg2
+» .lion
+» .wolf_bw
+» .wolf_g
+» .ninja
+» .3dsteel
+» .horror2
+» .lava
+» .bagel
+» .horror
+» .game8bit
+» .layered
+» .glitch2
+» .coolg
+» .coolwg
+» .realistic
+» .space3d
+» .battlegrounds-logo
+» .battlefield4
+» .text-8bit
+`
+conn.sendMessage(from, { image: { url: ppnyanjir }, 
+caption: teksmenunya,
+footer: 'IyanSpecial',
+mentions: [sender]},
+{quoted: fkontak })
+// conn.sendMessage(from, { text: tampilan_nya, footer: footer_nya, mentions: [setting.ownerNumber, sender]}, { quoted: fkontak})
 }
 break
 //»»————-★LIST MENU★————-««
@@ -1979,7 +1708,7 @@ let but_verify = [
 ]
 conn.sendMessage(from, { image: { url: ppnu }, 
 caption: verify_teks,
-footer: 'Ramaa-gnnz',
+footer: 'IyanSpecial',
 mentions: [sender]},
 {quoted: msg })
 await sleep(1000)
@@ -1992,32 +1721,16 @@ conn.sendMessage(`${setting.ownerNumber}`, {text:teksss_verify, mentions: [sende
 }
 break
 case 'infoupdate':
-reply('Cek YouTube : https://youtube.com/@ramaagnnz961')
+reply('*Chat wa: wa.me/6281952806095*')
 break
 case 'script': case 'sc':
-reply(`_-----SCRIPT BOT MD-----_
-
--Script Ini di jual Dengan harga yang Cukup Murah
-Kalian bisa membelinya
-Dengan Harga *Rp 55.000* 
- 
-*Whatsapp Admin*
-Wa.me/6285791220179
- 
- || Keterangan ||
- •Sudag termasuk Pengajaran
- •No enc 100%
- •Fitur Yang menarik
-•Dan masih Banyak lagi
-
- Jika berminat Chat
-Wa.me/6285791220179
+reply(`*udah gede nyari sc, beli dong*
 `)
 break
 case 'owner':{
 var owner_Nya = setting.ownerNumber
 sendContact(from, owner_Nya, setting.ownerName, msg)
-reply('*Itu kak nomor owner ku, Chat aja gk usah malu😆*')
+reply('*IyanSpecial*')
 }
 break
 case 'grupbot':
@@ -2030,7 +1743,7 @@ case 'thanksto':case 'contributors':case 'contributor':{
 	let ayank = `*⫍ THANKS TO ⫎*
    •Allah Swt
    •Ortu
-   •Ramaa gnnz *[Creator]*
+   •IyanXv *[Creator]*
    •Lexxy Ofc *[Penyedia Base]*
    •Zeeone Ofc *[Penyedia apikey]*
    •Danzz C *[Penyedia Apikey]*
@@ -2056,7 +1769,7 @@ Sanksi: *PERMANENT BLOCK*
 
 📮 Dimana saya bisa mendapatkan Script dari bot ini ?
 ➡️ Script ini bisa kalian dapatkan Dengan membeli Ke 
-Wa.me//6285791220179
+Wa.me//6281952806095
 
 📮 Boleh saya menambahkan bot ke grup?
 ➡️ Untuk itu tergantung dari owner bot sendiri`
@@ -2077,7 +1790,7 @@ Hallo @${sender.split('@')[0]} 👋
 - *Gopay :* ${setting.gopay}
 - *Ovo :* ${setting.ovo}
 - *Saweria :* ${setting.saweria}
-- *Qris :* Scan qr di atas
+- *Qris :* tidak ada qris
 
 berapapun donasi dari kalian itu sangat berarti bagi kami 
 `
